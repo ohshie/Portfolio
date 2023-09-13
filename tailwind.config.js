@@ -21,7 +21,8 @@ module.exports = {
         "lilac": "#a29fe3",
         "green": "#104547",
         "textBlack": "#00100B",
-        "lightGreen": "#499167"
+        "lightGreen": "#499167",
+        "textWhite": "#e4e4e4"
       }
     },
   },
