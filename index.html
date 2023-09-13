@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/style.css" rel="stylesheet">
+    <title>Portfolio</title>
+</head>
+<main class="flex min-h-screen flex-col bg-gradient-to-br from-[#F2F2F2] to-lilac">
+    
+    <!-- navbar -->
+    <nav class="fixed top-0 left-0 right-0 z-10 bg-gradient-to-tr from bg-slate-500 to to-blue-200">
+        <div class="container flex flex-wrap items-center justify-between mx-auto py-2 md:py-4 px-6 md:px-12 lg:px-36 xl:px-48" style="transition: 100ms;">
+            <h1 class="font-black text-textBlack}">Portfolio yo</h1>
+            <div id="navbar" class="menu hidden md:block md:w-auto">
+                <ul class="flex p-4 md:p-0 md:flex-row md:space-x-8 mt-0">
+                    <li>
+                        <a href="#about" class="block py-2 pl-3 pr-4 text-textBlack sm:text-xl rounded md:p-0 hover:text-[#6a7ea6]">About</a>
+                    </li>
+                    <li>
+                        <a href="#projects" class="block py-2 pl-3 pr-4 text-textBlack sm:text-xl rounded md:p-0 hover:text-[#6a7ea6]">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="block py-2 pl-3 pr-4 text-textBlack sm:text-xl rounded md:p-0 hover:text-[#6a7ea6]">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- body -->
+    <div class="container self-center flex flex-col px-6 md:px-12 lg:px-36 xl:px-48">
+        <!-- hello -->
+        <section id="hello" class="pt-12 sm:pt-20 lg:pt-32">
+            <div class="flex flex-col sm:flex-row justify-between gap-4">
+                <!-- text and buttons -->
+                <div class="self-center justify-evenly text-center sm:text-left sm:w-full">
+                        <h1 class="text-textBlack text-4xl sm:text-4xl  md:text-6xl lg:text-7xl xl:text-8xl font-extrabold mb-4" style="transition: 100ms;">
+                                <span class="text-transparent bg-clip-text bg-gradient-to-tr from-green to-[#499167]">
+                                        Hello, I'm
+                                    </span>
+                                    <br>
+                                    Stas
+                                </h1>
+                        <p class="text-textBlack text-base md:text-lg mb-6 lg:text-xl">.Net Core Back-End Developer</p>
+                        <div>
+                                    <a class="px-6 py-3 mr-2 mb-2 inline-block w-full sm:w-fit rounded-full bg-gradient-to-tr from-green to-[#499167] hover:bg-slate-50 text-white">Hire me!</a>
+                                    <a class="px-1 py-1 inline-block w-full sm:w-fit rounded-full bg-gradient-to-tr from-green to-[#499167] hover:bg-slate-50 text-white">
+                                        <span class="block px-5 py-2 bg-[#A29FE3] hover:bg-[#aca8fa] rounded-full text-white">
+                                            Get CV
+                                        </span>
+                                    </a>
+                        </div>
+                    </div>
+                    <!-- Pic -->
+                    <div class="self-center">
+                        <div class="rounded-full bg-slate-400 w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80 xl:w-96 xl:h-96 relative" style="transition: 50ms;">
+                            <img class="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" style="color: transparent;" loading="lazy" decoding="async" data-nimg="1" alt="hero image" src="./assets/images/hero.png">
+                        </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- about -->
+        <section id="about" class="py-6 md:py-20">
+            <div class="flex flex-row justify-between sm:gap-12" style="transition: 100ms;">
+
+                <!-- Image -->
+                <div class="hidden md:flex basis-1/2" style="transition: 100ms;">
+                    <img class="origin-left object-left object-cover" loading="lazy" decoding="async" data-nimg="1" style="color: transparent; transition: 100ms;" src="./assets/images/room.png">
+                </div>
+
+                <!-- Text -->
+                <div class="flex flex-col basis-auto md:basis-1/2">
+                    <h2 class="mb-4 lg:mb-8 text-3xl sm:text-4xl xl:text-6xl font-bold text-textBlack" style="transition: 100ms;">About me</h2>
+                    <p class="mb-4 lg:mb-8 text-base lg:text-lg text-textBlack" style="transition: 100ms;">I'm a junior developer with a background in C# and the .NET framework, including ASP.NET Core. I've hands-on experience with SQL and am familiar with EF Core ORM. As a self-taught professional, I'm committed to delivering innovative and top-quality solutions.</p>
+                    <div class="mb-4 lg:mb-8 flex flex-row justify-start">
+                        <button id="skillsButton">
+                            <p class="mr-3 font-bold hover:text-[#499167] text-green">Skills</p>  
+                            <div id="skillsButtonBar" class="h-1 bg-[#A29FE3] mt-2 mr-3" style="width: calc(100%-0.75rem); opacity: 100; transition: 200ms;"></div>
+                        </button>
+                        <button id="eduButton">
+                            <p class="mr-3 font-bold hover:text-[#499167] text-green">Education</p>  
+                            <div id="eduButtonBar" class="h-1 bg-[#A29FE3] mt-2 mr-3" style="width: calc(100%-0.75rem); opacity: 0; transition: 200ms;"></div>
+                        </button>
+                        <button id="certButton">
+                            <p class="mr-3 font-bold hover:text-[#499167] text-green">Certifications</p>  
+                            <div id="certButtonBar" class="h-1 bg-[#A29FE3] mt-2 mr-3" style="width: calc(100%-0.75rem); opacity: 0; transition: 200ms;"></div>
+                        </button>
+                    </div>
+                    <div>
+                        <ul class="list-disc pl-2 text-textBlack">
+                            <li>C#/.NET Core</li>
+                            <li>SQL, POSTGRE SQL and Entity Framework Core</li>
+                            <li>ASP.NET</li>
+                            <li>HTML/CSS/JS (just a tiny bit)</li>
+                            <li>Git(hub)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- projects -->
+        <section id="projects" class="py-6 md:py-12">
+
+            <!-- Text -->
+            <h2 class="text-center text-4xl font-bold text-textBlack">Projects</h2>
+
+            <!-- Buttons -->
+            <div class="flex flex-row justify-center items-center gap-2 py-6 text-textBlack">
+                <button class="rounded-full font-medium border-cyan-700 border-2 px-6 py-3 text-xl cursor-pointer text-textBlack">
+                    ALL
+                </button>
+                <button class="rounded-full border-2 px-6 py-3 text-xl cursor-pointer border-slate-400 hover:border-slate-500 text-[#363636]">Web</button>
+                <button class="rounded-full border-2 px-6 py-3 text-xl cursor-pointer border-slate-400 hover:border-slate-500 text-[#363636]">Bots</button>
+            </div>
+
+            <!-- tiles -->
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <div class="">
+                    <div class="relative h-64 w-full overflow-hidden rounded-t-xl ">
+                        <img alt="portfolio example" 
+                        src="./assets/images/web_port1.png" 
+                        loading="lazy"
+                        decoding="async"
+                        data-nimg="1"
+                        class="block inset-0 object-cover object-center">
+                        <div class="block absolute inset-0 bg-black opacity-0 hover:opacity-70 h-full w-full"></div>
+                    </div>
+                    <div class="text-center text-slate-200 font-medium p-4 rounded-b-xl bg-green ">TailwindCSS Portfolio</div>
+                </div>
+
+                <div class="">
+                    <div class="relative h-64 w-full overflow-hidden rounded-t-xl">
+                        <img alt="telegram bot example" 
+                        src="./assets/images/bot_teltotrel1.png" 
+                        loading="lazy"
+                        decoding="async"
+                        data-nimg="1"
+                        class="block inset-0 object-cover object-center">
+                        <div class="block absolute inset-0 bg-black opacity-0 hover:opacity-70"></div>
+                    </div>
+                    <div class="text-center text-slate-200 font-medium p-4 rounded-b-xl bg-green ">TailwindCSS Portfolio</div>
+                </div>
+                
+                <div class="">
+                    <div class="relative h-64 w-full overflow-hidden rounded-t-xl">
+                        <img alt="ui app example calculator" 
+                        src="./assets/images/calc.png" 
+                        loading="lazy"
+                        decoding="async"
+                        data-nimg="1"
+                        class="block h-64 w-full rounded-t-xl object-cover object-center">
+                        <div class="block absolute inset-0 bg-black opacity-0 hover:opacity-70"></div>
+                    </div>
+                    <div class="text-center text-slate-200 font-medium p-4 rounded-b-xl bg-green ">TailwindCSS Portfolio</div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-8 relative">
+            <div>
+                <h5 class="text-xl font-bold text-textBlack my-2">Let's connect!</h5>
+                <p class="text-[#090909 mb-4 max-w-dm]">Currently on the lookout for new opportunities, I'm always open to chat. If you have questions, a potential project, or just want to say hello, please drop me a line. I'll do my best to get back to you quickly.</p>
+                <div class="socials flex flex-row gap-2">
+                    <a href="https://github.com/ohshie"><img alt="Github icon and link" loading="lazy" width="48" height="48" decoding="async" data-nimg="1" style="color: transparent;" src="/assets/images/gh.svg.png"></a>
+                    <a href="https://www.linkedin.com/in/stanislav-evdokimov-b36aaa19a/"><img alt="Github icon and link" loading="lazy" width="48" height="48" decoding="async" data-nimg="1" style="color: transparent;" src="/assets/images/li.svg.png"></a>
+                </div>
+            </div>
+            <div>
+                <form class="flex flex-col">
+                    <div class="mb-6">
+                        <label for="email" class="text-[#00100B] block mb-2 text-sm font-semibold">Your email</label>
+                        <input id="email" class="bg-slate-400 border-1 border-[#104547] placeholder-neutral-500 text-sm rounded-lg block w-full p-2.5" placeholder="definitelynotaspammer@gmail.com" type="email" style="background-size: auto, 25px; background-image: none;">
+                    </div>
+                    <div class="mb-6">
+                        <label for="subject" class="text-[#00100B] block mb-2 text-sm font-semibold">Subject</label>
+                        <input id="subject" class="bg-slate-400 border-1 border-[#104547] placeholder-neutral-500 text-sm rounded-lg block w-full p-2.5" placeholder="Hey!" type="text" style="background-size: auto, 25px; background-image: none;">
+                    </div>
+                    <div class="mb-6">
+                        <label for="message" class="text-[#00100B] block mb-2 text-sm font-semibold">Message</label>
+                        <textarea id="message" class="bg-slate-400 border-1 border-[#104547] placeholder-neutral-500 text-sm rounded-lg block w-full p-2.5" placeholder="Lets talk about.." type="text" style="background-size: auto, 25px; background-image: none;"></textarea>
+                    </div>
+                    <button class="bg-[#104547] hover:bg-[hsl(182,53%,27%)] rounded-xl text-white font-medium py-2.5 px-5 w-full">Send Message!</button>
+                </form>
+            </div>
+        </section>
+
+    </div>
+    <!-- Footer -->
+    <footer class="border border-t-[#33353f] border-b-transparent border-x-transparent text-[#00100b]">
+        <div class="container flex flex-wrap items-center justify-between py-2 md:py-4 mx-auto px-6 md:px-12 lg:px-36 xl:px-48" style="transition: 100ms;">
+            <span>LOGO</span>
+            <a href="#top" class="text-textBlack hover:text-lightGreen">Go back to the top</a>
+        </div>
+    </footer>
+</main>
+
+<script src="index.js"></script>
+</html>
