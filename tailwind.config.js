@@ -27,5 +27,10 @@ module.exports = {
     },
   },
   plugins: [],
+  exports: {
+    future:{
+      hoverOnlyWhenSupported: true,
+    }
+  }
 }
 
