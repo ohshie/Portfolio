@@ -10,9 +10,13 @@
 <main class="flex min-h-screen flex-col bg-gradient-to-br from-[#F2F2F2] to-lilac">
     
     <!-- navbar -->
-    <nav class="fixed top-0 left-0 right-0 z-10 bg-gradient-to-tr from bg-slate-500 to to-blue-200">
-        <div class="container flex flex-wrap items-center justify-between mx-auto py-2 md:py-4 px-6 md:px-12 lg:px-36 xl:px-48" style="transition: 100ms;">
-            <h1 class="font-black text-textBlack}">Portfolio yo</h1>
+    <div id="navbar" class="sticky top-0 py-4 content-center w-full bg-opacity-75 backdrop-filter backdrop-blur-sm  bg-lilac z-10" style="transition: 100ms;">
+        <div class="flex flex-row justify-evenly">
+            <img src="assets/images/logo.png" 
+            class="self-center h-4 sm:h-8"
+            loading="lazy" 
+            decoding="async" 
+            data-nimg="1">
             <div id="navbar" class="menu hidden md:block md:w-auto">
                 <ul class="flex p-4 md:p-0 md:flex-row md:space-x-8 mt-0">
                     <li>
@@ -27,7 +31,8 @@
                 </ul>
             </div>
         </div>
-    </nav>
+    </div>
+    
 
     <!-- body -->
     <div class="container self-center flex flex-col px-6 md:px-12 lg:px-36 xl:px-48">
@@ -72,25 +77,25 @@
                 </div>
 
                 <!-- Text -->
-                <div class="flex flex-col basis-auto md:basis-1/2">
-                    <h2 class="mb-4 lg:mb-8 text-3xl sm:text-4xl xl:text-6xl font-bold text-textBlack" style="transition: 100ms;">About me</h2>
-                    <p class="mb-4 lg:mb-8 text-base lg:text-lg text-textBlack" style="transition: 100ms;">I'm a junior developer with a background in C# and the .NET framework, including ASP.NET Core. I've hands-on experience with SQL and am familiar with EF Core ORM. As a self-taught professional, I'm committed to delivering innovative and top-quality solutions.</p>
-                    <div class="mb-4 lg:mb-8 flex flex-row justify-start">
+                <div class="flex flex-col gap-4 justify-around basis-auto md:basis-1/2">
+                    <h2 class="text-3xl sm:text-4xl xl:text-6xl font-bold text-textBlack" style="transition: 100ms;">About me</h2>
+                    <p class="text-base lg:text-lg text-textBlack" style="transition: 100ms;">I'm a junior developer with a background in C# and the .NET framework, including ASP.NET Core. I've hands-on experience with SQL and am familiar with EF Core ORM. As a self-taught professional, I'm committed to delivering innovative and top-quality solutions.</p>
+                    <div class="flex flex-row gap-3 justify-start">
                         <button id="skillsButton">
-                            <p class="mr-3 font-bold hover:text-[#499167] text-green">Skills</p>  
-                            <div id="skillsButtonBar" class="h-1 bg-[#A29FE3] mt-2 mr-3" style="width: calc(100%-0.75rem); opacity: 100; transition: 200ms;"></div>
+                            <p class="font-bold pb-1 hover:text-[#499167] text-green">Skills</p>  
+                            <div id="skillsButtonBar" class="h-1 bg-[#A29FE3]" style="width: calc(100%-0.75rem); opacity: 100; transition: 200ms;"></div>
                         </button>
                         <button id="eduButton">
-                            <p class="mr-3 font-bold hover:text-[#499167] text-green">Education</p>  
-                            <div id="eduButtonBar" class="h-1 bg-[#A29FE3] mt-2 mr-3" style="width: calc(100%-0.75rem); opacity: 0; transition: 200ms;"></div>
+                            <p class="font-bold pb-1 hover:text-[#499167] text-green">Education</p>  
+                            <div id="eduButtonBar" class="h-1 bg-[#A29FE3]" style="width: calc(100%-0.75rem); opacity: 0; transition: 200ms;"></div>
                         </button>
                         <button id="certButton">
-                            <p class="mr-3 font-bold hover:text-[#499167] text-green">Certifications</p>  
-                            <div id="certButtonBar" class="h-1 bg-[#A29FE3] mt-2 mr-3" style="width: calc(100%-0.75rem); opacity: 0; transition: 200ms;"></div>
+                            <p class="font-bold pb-1 hover:text-[#499167] text-green">Certifications</p>  
+                            <div id="certButtonBar" class="h-1 bg-[#A29FE3]" style="width: calc(100%-0.75rem); opacity: 0; transition: 200ms;"></div>
                         </button>
                     </div>
                     <div>
-                        <ul class="list-disc pl-2 text-textBlack">
+                        <ul class="list-disc pl-2 text-lg text-textBlack">
                             <li>C#/.NET Core</li>
                             <li>SQL, POSTGRE SQL and Entity Framework Core</li>
                             <li>ASP.NET</li>
@@ -109,11 +114,11 @@
             <h2 class="text-center text-4xl font-bold text-textBlack py-3">Projects</h2>
 
             <!-- Buttons -->
-            <div class="flex flex-row justify-center items-center gap-2 py-3 text-textBlack">
-                <button class="rounded-full font-medium border-green border-2 px-6 py-3 text-xl cursor-pointer text-textBlack">ALL</button>
-                <button class="rounded-full border-2 px-6 py-3 text-xl cursor-pointer border-slate-400 hover:border-lilac text-textBlack">Web</button>
-                <button class="rounded-full border-2 px-6 py-3 text-xl cursor-pointer border-slate-400 hover:border-lilac text-textBlack">Native Apps</button>
-                <button class="rounded-full border-2 px-6 py-3 text-xl cursor-pointer border-slate-400 hover:border-lilac text-textBlack">Bots</button>
+            <div class="flex flex-row flex-wrap justify-center items-center gap-2 py-3 text-textBlack">
+                <button value="All" class="rounded-full font-medium border-green border-2 px-6 py-3 text-xl cursor-pointer text-textBlack">All</button>
+                <button value="Web"class="rounded-full border-2 px-6 py-3 text-xl cursor-pointer border-slate-400 hover:border-lilac text-textBlack">Web</button>
+                <button value="Native" class="rounded-full border-2 px-6 py-3 text-xl cursor-pointer border-slate-400 hover:border-lilac text-textBlack">Native Apps</button>
+                <button value="Bots" class="rounded-full border-2 px-6 py-3 text-xl cursor-pointer border-slate-400 hover:border-lilac text-textBlack">Bots</button>
             </div>
 
             <!-- tiles -->
@@ -121,7 +126,7 @@
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 py-6">
 
                 <!-- portfolio -->
-                <div id="pPortfolio">
+                <div id="pPortfolio" class="filtered Web" style="transition: 100ms;">
                     <div class="relative h-64  w-full overflow-hidden rounded-t-xl">
 
                             <img alt="telegram bot example" 
@@ -148,7 +153,7 @@
                                     style="transition: 100ms;">
                                 </a>
 
-                                <a href="https://github.com/ohshie/portfolio" target="_blank">
+                                <a href="https://ohshie.com" target="_blank">
                                     <img src="assets/images/Globe.png" 
                                     loading="lazy" 
                                     decoding="async" class="hover:scale-105 h-14 w-14"
@@ -163,7 +168,7 @@
                 </div>
 
                 <!-- Bot -->
-                <div id="pBot">
+                <div id="pBot"  class="filtered Bots" style="transition: 100ms;">
                     <div class="relative h-64  w-full overflow-hidden rounded-t-xl">
 
                             <img alt="telegram bot example" 
@@ -184,14 +189,14 @@
                             </ul>
 
                             <div class="flex flex-col gap-2 h-full justify-center">
-                                <a href="https://t.me/teltotrelbot" target="_blank">
+                                <a href="https://github.com/ohshie/telegramToTrello" target="_blank">
                                     <img src="assets/images/GitHubW.png" 
                                     loading="lazy" 
                                     decoding="async" class="hover:scale-105 h-14 w-14"
                                     style="transition: 100ms;">
                                 </a>
 
-                                <a href="https://github.com/ohshie/telegramToTrello" target="_blank">
+                                <a href="https://t.me/teltotrelbot" target="_blank">
                                     <img src="assets/images/Globe.png" 
                                     loading="lazy" 
                                     decoding="async" class="hover:scale-105 h-14 w-14"
@@ -206,7 +211,7 @@
                 </div>
                 
                 <!-- Calc -->
-                <div class="pCalc">
+                <div id="pCalc"  class="filtered Native" style="transition: 100ms;">
                     <div class="relative h-64  w-full overflow-hidden rounded-t-xl">
 
                         <img alt="telegram bot example" 
@@ -225,7 +230,7 @@
                         </ul>
 
                         <div class="flex flex-col gap-2 h-full justify-center">
-                            <a href="https://t.me/teltotrelbot" target="_blank">
+                            <a href="https://github.com/ohshie/SimpleCalculator" target="_blank">
                                 <img src="assets/images/GitHubW.png" 
                                 loading="lazy" 
                                 decoding="async" class="hover:scale-105 h-14 w-14"
@@ -256,11 +261,11 @@
                 <p class="text-[#090909 mb-4 max-w-dm]">Currently on the lookout for new opportunities, I'm always open to chat. If you have questions, a potential project, or just want to say hello, please drop me a line. I'll do my best to get back to you quickly.</p>
                 <div class="socials flex flex-row gap-2">
 
-                    <a href="https://github.com/ohshie">
+                    <a href="https://github.com/ohshie" target="_blank">
                         <img class="hover:scale-105" alt="Github icon and link" loading="lazy" width="48" height="48" decoding="async" data-nimg="1" style="color: transparent; transition: 100ms;" src="/assets/images/GitHubB.png">
                     </a>
                     
-                    <a href="https://www.linkedin.com/in/stanislav-evdokimov-b36aaa19a/" target="_blank"></a>
+                    <a href="https://www.linkedin.com/in/stanislav-evdokimov-b36aaa19a/" target="_blank">
                         <img class="hover:scale-105" alt="LinkedIn icon and link" loading="lazy" width="48" height="48" decoding="async" data-nimg="1" style="color: transparent; transition: 100ms;" src="/assets/images/LIb.png">
                     </a>
 
@@ -289,7 +294,11 @@
     <!-- Footer -->
     <footer class="border border-t-[#33353f] border-b-transparent border-x-transparent text-[#00100b]">
         <div class="container flex flex-wrap items-center justify-between py-2 md:py-4 mx-auto px-6 md:px-12 lg:px-36 xl:px-48" style="transition: 100ms;">
-            <span>LOGO</span>
+            <img src="assets/images/logoOhshie.png" 
+            class="self-center h-4 sm:h-8"
+            loading="lazy" 
+            decoding="async" 
+            data-nimg="1">
             <a href="#top" class="text-textBlack hover:text-lightGreen">Go back to the top</a>
         </div>
     </footer>
