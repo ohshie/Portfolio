@@ -1,309 +1,573 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./css/style.css" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./css/style.css" rel="stylesheet" />
     <title>Portfolio</title>
-</head>
+  </head>
 
-<main class="flex min-h-screen flex-col bg-gradient-to-br from-[#F2F2F2] to-lilac">
+  <main
+    class="flex min-h-screen flex-col bg-gradient-to-br from-[#F2F2F2] to-lilac"
+  >
     <!-- navbar -->
-    <div id="navbar" class="sticky top-0 py-4 content-center w-full bg-opacity-75 backdrop-filter backdrop-blur-sm  bg-lilac z-10" style="transition: 100ms;">
-        <div class="flex flex-row justify-evenly">
-            <img alt="logo" src="assets/images/logo.png"
-            class="self-center h-4 sm:h-8"
-            loading="lazy" 
-            decoding="async" 
-            data-nimg="1">
-            <div id="navbar" class="menu hidden md:block md:w-auto">
-                <ul class="flex p-4 md:p-0 md:flex-row md:space-x-8 mt-0">
-                    <li>
-                        <a href="#about" class="block py-2 pl-3 pr-4 text-textBlack sm:text-xl rounded md:p-0 hover:text-[#6a7ea6]">About</a>
-                    </li>
-                    <li>
-                        <a href="#projects" class="block py-2 pl-3 pr-4 text-textBlack sm:text-xl rounded md:p-0 hover:text-[#6a7ea6]">Projects</a>
-                    </li>
-                    <li>
-                        <a href="#contact" class="block py-2 pl-3 pr-4 text-textBlack sm:text-xl rounded md:p-0 hover:text-[#6a7ea6]">Contact</a>
-                    </li>
-                </ul>
-            </div>
+    <div
+      id="navbar"
+      class="sticky top-0 py-4 content-center w-full bg-opacity-75 backdrop-filter backdrop-blur-sm bg-lilac z-10"
+      style="transition: 100ms"
+    >
+      <div class="flex flex-row justify-evenly">
+        <img
+          alt="logo"
+          src="assets/images/logo.png"
+          class="self-center h-4 sm:h-8"
+          loading="lazy"
+          decoding="async"
+          data-nimg="1"
+        />
+        <div id="navbar" class="menu hidden md:block md:w-auto">
+          <ul class="flex p-4 md:p-0 md:flex-row md:space-x-8 mt-0">
+            <li>
+              <a
+                href="#about"
+                class="block py-2 pl-3 pr-4 text-textBlack sm:text-xl rounded md:p-0 hover:text-[#6a7ea6]"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="#projects"
+                class="block py-2 pl-3 pr-4 text-textBlack sm:text-xl rounded md:p-0 hover:text-[#6a7ea6]"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a
+                href="#contact"
+                class="block py-2 pl-3 pr-4 text-textBlack sm:text-xl rounded md:p-0 hover:text-[#6a7ea6]"
+                >Contact</a
+              >
+            </li>
+          </ul>
         </div>
+      </div>
     </div>
-    
 
     <!-- body -->
-    <div class="container self-center flex flex-col px-6 md:px-12 lg:px-36 xl:px-48">
-        <!-- hello -->
-        <section id="hello" class="py-12 sm:py-20 lg:py-32">
-            <div class="flex flex-col sm:flex-row justify-between gap-4">
-                <!-- text and buttons -->
-                <div class="self-center justify-evenly text-center sm:text-left sm:w-full">
-                        <h1 class="text-textBlack text-4xl sm:text-4xl  md:text-6xl lg:text-7xl xl:text-8xl font-extrabold mb-4" style="transition: 100ms;">
-                                <span class="text-transparent bg-clip-text bg-gradient-to-tr from-green to-[#499167]">
-                                        Hello, I'm
-                                    </span>
-                                    <br>
-                                    Stas
-                                </h1>
-                        <p class="text-textBlack text-base md:text-lg mb-6 lg:text-xl">.Net Core Back-End Developer</p>
-                        <div>
-                                    <a href="#contact" class="px-6 py-3 mr-2 mb-2 inline-block w-full sm:w-fit rounded-full bg-gradient-to-tr from-green to-[#499167] hover:bg-slate-50 text-[#e4e4e4]">Hire me!</a>
-                                    <a href="" class="px-1 py-1 inline-block w-full sm:w-fit rounded-full bg-gradient-to-tr from-green to-[#499167] hover:bg-slate-50 text-[#e4e4e4]">
-                                        <span class="block px-5 py-2 bg-[#A29FE3] hover:bg-[#aca8fa] rounded-full text-[#e4e4e4]">
-                                            Get CV
-                                        </span>
-                                    </a>
-                        </div>
-                    </div>
-                    <!-- Pic -->
-                    <div class="self-center">
-                        <div class="rounded-full bg-slate-400 w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80 xl:w-96 xl:h-96 relative" style="transition: 50ms;">
-                            <img class="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" style="color: transparent;" loading="lazy" decoding="async" data-nimg="1" alt="hero image" src="./assets/images/hero.webp">
-                        </div>
-                </div>
+    <div
+      class="container self-center flex flex-col px-6 md:px-12 lg:px-36 xl:px-48"
+    >
+      <!-- hello -->
+      <section id="hello" class="py-12 sm:py-20 lg:py-32">
+        <div class="flex flex-col sm:flex-row justify-between gap-4">
+          <!-- text and buttons -->
+          <div
+            class="self-center justify-evenly text-center sm:text-left sm:w-full"
+          >
+            <h1
+              class="text-textBlack text-4xl sm:text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-extrabold mb-4"
+              style="transition: 100ms"
+            >
+              <span
+                class="text-transparent bg-clip-text bg-gradient-to-tr from-green to-[#499167]"
+              >
+                Hello, I'm
+              </span>
+              <br />
+              Stas
+            </h1>
+            <p class="text-textBlack text-base md:text-lg mb-6 lg:text-xl">
+              .Net Core Back-End Developer
+            </p>
+            <div>
+              <a
+                href="#contact"
+                class="px-6 py-3 mr-2 mb-2 inline-block w-full sm:w-fit rounded-full bg-gradient-to-tr from-green to-[#499167] hover:bg-slate-50 text-[#e4e4e4]"
+                >Hire me!</a
+              >
+              <a
+                href="./StanislavEvdokimov_CV_backendJunior.pdf"
+                target="_blank"
+                class="px-1 py-1 inline-block w-full sm:w-fit rounded-full bg-gradient-to-tr from-green to-[#499167] hover:bg-slate-50 text-[#e4e4e4]"
+              >
+                <span
+                  class="block px-5 py-2 bg-[#A29FE3] hover:bg-[#aca8fa] rounded-full text-[#e4e4e4]"
+                >
+                  Get CV
+                </span>
+              </a>
             </div>
-        </section>
-
-        <!-- about -->
-        <section id="about" class="py-6 md:py-12">
-            <div class="flex flex-row justify-between sm:gap-12" style="transition: 100ms;">
-
-                <!-- Image -->
-                <div class="hidden md:flex basis-1/2" style="transition: 100ms;">
-                    <img class="origin-left object-left object-cover" loading="lazy" decoding="async" data-nimg="1" style="color: transparent; transition: 100ms;" src="./assets/images/room.webp" alt="picture of a room">
-                </div>
-
-                <!-- Text -->
-                <div class="flex flex-col gap-4 justify-around basis-auto md:basis-1/2">
-                    <h2 class="text-3xl sm:text-4xl xl:text-6xl font-bold text-textBlack" style="transition: 100ms;">About me</h2>
-                    <p class="text-base lg:text-lg text-textBlack" style="transition: 100ms;">I'm a junior developer with a background in C# and the .NET framework, including ASP.NET Core. I've hands-on experience with SQL and am familiar with EF Core ORM. As a self-taught professional, I'm committed to delivering innovative and top-quality solutions.</p>
-                    <div class="flex flex-row gap-3 justify-start">
-                        <button id="skillsButton">
-                            <p class="font-bold pb-1 hover:text-[#499167] text-green">Skills</p>
-                            <div id="skillsButtonBar" class="h-1 bg-[#A29FE3]" style="width: calc(100% - 0.75rem); opacity: 100; transition: 200ms;"></div>
-                        </button>
-                        <button id="eduButton">
-                            <p class="font-bold pb-1 hover:text-[#499167] text-green">Education</p>  
-                            <div id="eduButtonBar" class="h-1 bg-[#A29FE3]" style="width: calc(100% - 0.75rem); opacity: 0; transition: 200ms;"></div>
-                        </button>
-                        <button id="certButton">
-                            <p class="font-bold pb-1 hover:text-[#499167] text-green">Certifications</p>  
-                            <div id="certButtonBar" class="h-1 bg-[#A29FE3]" style="width: calc(100% - 0.75rem); opacity: 0; transition: 200ms;"></div>
-                        </button>
-                    </div>
-                    <div>
-                        <ul class="list-disc pl-2 text-lg text-textBlack">
-                            <li>C#/.NET Core</li>
-                            <li>SQL, POSTGRE SQL and Entity Framework Core</li>
-                            <li>ASP.NET</li>
-                            <li>HTML/CSS/JS (just a tiny bit)</li>
-                            <li>Git(hub)</li>
-                        </ul>
-                    </div>
-                </div>
+          </div>
+          <!-- Pic -->
+          <div class="self-center">
+            <div
+              class="rounded-full bg-slate-400 w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80 xl:w-96 xl:h-96 relative"
+              style="transition: 50ms"
+            >
+              <img
+                class="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                style="color: transparent"
+                loading="lazy"
+                decoding="async"
+                data-nimg="1"
+                alt="hero image"
+                src="./assets/images/hero.webp"
+              />
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <!-- projects -->
-        <section id="projects" class="py-6 md:py-12">
+      <!-- about -->
+      <section id="about" class="py-6 md:py-12">
+        <div
+          class="flex flex-row justify-between sm:gap-12"
+          style="transition: 100ms"
+        >
+          <!-- Image -->
+          <div class="hidden md:flex basis-1/2" style="transition: 100ms">
+            <img
+              class="origin-left object-left object-cover"
+              loading="lazy"
+              decoding="async"
+              data-nimg="1"
+              style="color: transparent; transition: 100ms"
+              src="./assets/images/room.webp"
+              alt="picture of a room"
+            />
+          </div>
 
-            <!-- Text -->
-            <h2 class="text-center text-4xl font-bold text-textBlack py-3">Projects</h2>
-
-            <!-- Buttons -->
-            <div class="flex flex-row flex-wrap justify-center items-center gap-2 py-3 text-textBlack">
-                <button value="All" class="rounded-full font-medium border-green border-2 px-6 py-3 text-xl cursor-pointer text-textBlack">All</button>
-                <button value="Web"class="rounded-full border-2 px-6 py-3 text-xl cursor-pointer border-slate-400 hover:border-lilac text-textBlack">Web</button>
-                <button value="Native" class="rounded-full border-2 px-6 py-3 text-xl cursor-pointer border-slate-400 hover:border-lilac text-textBlack">Native Apps</button>
-                <button value="Bots" class="rounded-full border-2 px-6 py-3 text-xl cursor-pointer border-slate-400 hover:border-lilac text-textBlack">Bots</button>
+          <!-- Text -->
+          <div
+            class="flex flex-col gap-4 justify-normal basis-auto md:basis-1/2"
+          >
+            <h2
+              class="text-3xl sm:text-4xl xl:text-6xl font-bold text-textBlack"
+              style="transition: 100ms"
+            >
+              About me
+            </h2>
+            <p
+              class="text-base lg:text-lg text-textBlack"
+              style="transition: 100ms"
+            >
+              I'm a junior developer with a background in C# and the .NET
+              framework, including ASP.NET Core. I've hands-on experience with
+              SQL and am familiar with EF Core ORM. As a self-taught
+              professional, I'm committed to delivering innovative and
+              top-quality solutions.
+            </p>
+            <div class="flex flex-row gap-3 justify-start">
+              <button id="skillsButton">
+                <p class="font-bold pb-1 hover:text-[#499167] text-green">
+                  Skills
+                </p>
+                <div
+                  id="skillsButtonBar"
+                  class="h-1 bg-[#A29FE3]"
+                  style="opacity: 100; transition: 200ms"
+                ></div>
+              </button>
+              <button id="eduButton">
+                <p class="font-bold pb-1 hover:text-[#499167] text-green">
+                  Education
+                </p>
+                <div
+                  id="eduButtonBar"
+                  class="h-1 bg-[#A29FE3]"
+                  style="opacity: 0; transition: 200ms"
+                ></div>
+              </button>
+              <button id="certButton">
+                <p class="font-bold pb-1 hover:text-[#499167] text-green">
+                  Certifications
+                </p>
+                <div
+                  id="certButtonBar"
+                  class="h-1 bg-[#A29FE3]"
+                  style="opacity: 0; transition: 200ms"
+                ></div>
+              </button>
             </div>
+            <div>
+              <ul id="skills-ul" class="list-disc pl-2 text-lg text-textBlack">
+                <li>C#/.NET Core</li>
+                <li>SQL, POSTGRE SQL and Entity Framework Core</li>
+                <li>ASP.NET</li>
+                <li>HTML/CSS/JS (just a tiny bit)</li>
+                <li>Git(hub)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
 
-            <!-- tiles -->
+      <!-- projects -->
+      <section id="projects" class="py-6 md:py-12">
+        <!-- Text -->
+        <h2 class="text-center text-4xl font-bold text-textBlack py-3">
+          Projects
+        </h2>
 
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 py-6">
+        <!-- Buttons -->
+        <div
+          class="flex flex-row flex-wrap justify-center items-center gap-2 py-3 text-textBlack"
+        >
+          <button
+            value="All"
+            class="rounded-full font-medium border-green border-2 px-6 py-3 text-xl cursor-pointer text-textBlack"
+          >
+            All
+          </button>
+          <button
+            value="Web"
+            class="rounded-full border-2 px-6 py-3 text-xl cursor-pointer border-slate-400 hover:border-lilac text-textBlack"
+          >
+            Web
+          </button>
+          <button
+            value="Native"
+            class="rounded-full border-2 px-6 py-3 text-xl cursor-pointer border-slate-400 hover:border-lilac text-textBlack"
+          >
+            Native Apps
+          </button>
+          <button
+            value="Bots"
+            class="rounded-full border-2 px-6 py-3 text-xl cursor-pointer border-slate-400 hover:border-lilac text-textBlack"
+          >
+            Bots
+          </button>
+        </div>
 
-                <!-- portfolio -->
-                <div id="pPortfolio" class="filtered Web" style="transition: 100ms;">
-                    <div class="relative h-64  w-full overflow-hidden rounded-t-xl">
+        <!-- tiles -->
 
-                            <img alt="telegram bot example" 
-                            src="./assets/images/web_port1.webp" 
-                            loading="lazy"
-                            decoding="async"
-                            data-nimg="1"
-                            class="object-cover object-center w-full h-full">
-                        
-                        <div class="absolute inset-0 opacity-100 sm:opacity-0 hover:opacity-100 bg-black bg-opacity-50 sm:bg-opacity-0 hover:bg-opacity-70 flex flex-row gap-4 p-4 justify-evenly items-center" 
-                        style="transition: 100ms;">
-                            
-                            <ul class="text-textWhite list-disc">
-                                <li>HTML/TailwindCSS</li>
-                                <li>Pure JS</li>
-                                <li>Cloudflare pages</li>
-                            </ul>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 py-6">
+          <!-- portfolio -->
+          <div id="pPortfolio" class="filtered Web" style="transition: 100ms">
+            <div class="relative h-64 w-full overflow-hidden rounded-t-xl">
+              <img
+                alt="ohdl example"
+                src="./assets/images/ohdl.webp"
+                loading="lazy"
+                decoding="async"
+                data-nimg="1"
+                class="object-cover object-center w-full h-full"
+              />
 
-                            <div class="flex flex-col gap-2 h-full justify-center">
-                                <a href="https://github.com/ohshie/portfolio" target="_blank">
-                                    <img src="assets/images/GitHubW.png" 
-                                    loading="lazy" 
-                                    decoding="async" class="hover:scale-105 h-14 w-14"
-                                    style="transition: 100ms;">
-                                </a>
+              <div
+                class="absolute inset-0 opacity-100 sm:opacity-0 hover:opacity-100 bg-black bg-opacity-50 sm:bg-opacity-0 hover:bg-opacity-70 flex flex-row gap-4 p-4 justify-evenly items-center"
+                style="transition: 100ms"
+              >
+                <ul class="text-textWhite list-disc">
+                  <li>HTML/TailwindCSS</li>
+                  <li>JS FrontEnd</li>
+                  <li>Asp.net core BackEnd</li>
+                  <li>OracleCloud</li>
+                </ul>
 
-                                <a href="https://ohshie.com" target="_blank">
-                                    <img src="assets/images/Globe.png" 
-                                    loading="lazy" 
-                                    decoding="async" class="hover:scale-105 h-14 w-14"
-                                    style="transition: 100ms;">
-                                </a>
-                            </div>
-                            
-                        </div>
-                    </div>
-
-                    <div class="text-center text-textWhite font-medium p-4 rounded-b-xl bg-green ">TailwindCSS Portfolio</div>
+                <div class="flex flex-col gap-2 h-full justify-center">
+                  <a href="https://github.com/stars/ohshie/lists/ohdl" target="_blank">
+                    <img
+                      src="assets/images/GitHubW.png"
+                      loading="lazy"
+                      decoding="async"
+                      class="hover:scale-105 h-14 w-14"
+                      style="transition: 100ms"
+                    />
+                  </a>
                 </div>
-
-                <!-- Bot -->
-                <div id="pBot"  class="filtered Bots" style="transition: 100ms;">
-                    <div class="relative h-64  w-full overflow-hidden rounded-t-xl">
-
-                            <img alt="telegram bot example" 
-                            src="./assets/images/bot_teltotrel.png" 
-                            loading="lazy"
-                            decoding="async"
-                            data-nimg="1"
-                            class="object-cover object-center w-full h-full">
-                        
-                        <div class="absolute inset-0 opacity-100 sm:opacity-0 hover:opacity-100 bg-black bg-opacity-50 sm:bg-opacity-0 hover:bg-opacity-70 flex flex-row gap-4 p-4 justify-evenly items-center" 
-                        style="transition: 100ms;">
-                            
-                            <ul class="text-textWhite list-disc">
-                                <li>.NET</li>
-                                <li>EF Core</li>
-                                <li>PostgreSQL</li>
-                                <li>Trello Api</li>
-                            </ul>
-
-                            <div class="flex flex-col gap-2 h-full justify-center">
-                                <a href="https://github.com/ohshie/telegramToTrello" target="_blank">
-                                    <img src="assets/images/GitHubW.png" 
-                                    loading="lazy" 
-                                    decoding="async" class="hover:scale-105 h-14 w-14"
-                                    style="transition: 100ms;">
-                                </a>
-
-                                <a href="https://t.me/teltotrelbot" target="_blank">
-                                    <img src="assets/images/Globe.png" 
-                                    loading="lazy" 
-                                    decoding="async" class="hover:scale-105 h-14 w-14"
-                                    style="transition: 100ms;">
-                                </a>
-                            </div>
-                            
-                        </div>
-                    </div>
-
-                    <div class="text-center text-textWhite font-medium p-4 rounded-b-xl bg-green ">Telegram bot for Trello</div>
-                </div>
-                
-                <!-- Calc -->
-                <div id="pCalc"  class="filtered Native" style="transition: 100ms;">
-                    <div class="relative h-64  w-full overflow-hidden rounded-t-xl">
-
-                        <img alt="telegram bot example" 
-                        src="./assets/images/calc.png" 
-                        loading="lazy"
-                        decoding="async"
-                        data-nimg="1"
-                        class="object-cover object-center w-full h-full">
-                    
-                    <div class="absolute inset-0 opacity-100 sm:opacity-0 hover:opacity-100 bg-black bg-opacity-50 sm:bg-opacity-0 hover:bg-opacity-70 flex flex-row gap-4 p-4 justify-evenly items-center" 
-                    style="transition: 100ms;">
-                        
-                        <ul class="text-textWhite list-disc">
-                            <li>.NET</li>
-                            <li>AvaloniaUI Xaml</li>
-                        </ul>
-
-                        <div class="flex flex-col gap-2 h-full justify-center">
-                            <a href="https://github.com/ohshie/SimpleCalculator" target="_blank">
-                                <img src="assets/images/GitHubW.png" 
-                                loading="lazy" 
-                                decoding="async" class="hover:scale-105 h-14 w-14"
-                                style="transition: 100ms;">
-                            </a>
-
-                            <a href="https://github.com/ohshie/SimpleCalculator" target="_blank">
-                                <img src="assets/images/Globe.png" 
-                                loading="lazy" 
-                                decoding="async" class="hover:scale-105 h-14 w-14"
-                                style="transition: 100ms;">
-                            </a>
-                        </div>
-                        
-                    </div>
-                </div>
-
-                <div class="text-center text-textWhite font-medium p-4 rounded-b-xl bg-green ">Native calculator with AvaloniaUi</div>
-                </div>
+              </div>
             </div>
 
-        </section>
+            <div
+              class="text-center text-textWhite font-medium p-4 rounded-b-xl bg-green"
+            >
+              Yt-dlp wrapper for web
+            </div>
+          </div>
+          <div id="pPortfolio" class="filtered Web" style="transition: 100ms">
+            <div class="relative h-64 w-full overflow-hidden rounded-t-xl">
+              <img
+                alt="portfolio example"
+                src="./assets/images/web_port.webp"
+                loading="lazy"
+                decoding="async"
+                data-nimg="1"
+                class="object-cover object-center w-full h-full"
+              />
 
-        <!-- Contact -->
-        <section id="contact" class="flex flex-col sm:flex-row justify-between py-12">
-            <div class="basis-1/2 pr-8 flex-col justify-start">
-                <h2 class="text-xl font-bold text-textBlack my-2">Let's connect!</h2>
-                <p class="text-[#090909]">Currently on the lookout for new opportunities, I'm always open to chat. If you have questions, a potential project, or just want to say hello, please drop me a line. I'll do my best to get back to you quickly.</p>
-                <div class="socials flex flex-row gap-2 py-4">
+              <div
+                class="absolute inset-0 opacity-100 sm:opacity-0 hover:opacity-100 bg-black bg-opacity-50 sm:bg-opacity-0 hover:bg-opacity-70 flex flex-row gap-4 p-4 justify-evenly items-center"
+                style="transition: 100ms"
+              >
+                <ul class="text-textWhite list-disc">
+                  <li>HTML/TailwindCSS</li>
+                  <li>Pure JS</li>
+                  <li>Cloudflare pages</li>
+                </ul>
 
-                    <a href="https://github.com/ohshie" target="_blank">
-                        <img class="hover:scale-105" alt="Github icon and link" loading="lazy" width="48" height="48" decoding="async" data-nimg="1" style="color: transparent; transition: 100ms;" src="/assets/images/GitHubB.png">
-                    </a>
-                    
-                    <a href="https://www.linkedin.com/in/stanislav-evdokimov-b36aaa19a/" target="_blank">
-                        <img class="hover:scale-105" alt="LinkedIn icon and link" loading="lazy" width="48" height="48" decoding="async" data-nimg="1" style="color: transparent; transition: 100ms;" src="/assets/images/LIb.png">
-                    </a>
+                <div class="flex flex-col gap-2 h-full justify-center">
+                  <a href="https://github.com/ohshie/portfolio" target="_blank">
+                    <img
+                      src="assets/images/GitHubW.png"
+                      loading="lazy"
+                      decoding="async"
+                      class="hover:scale-105 h-14 w-14"
+                      style="transition: 100ms"
+                    />
+                  </a>
 
+                  <a href="https://ohshie.com" target="_blank">
+                    <img
+                      src="assets/images/Globe.png"
+                      loading="lazy"
+                      decoding="async"
+                      class="hover:scale-105 h-14 w-14"
+                      style="transition: 100ms"
+                    />
+                  </a>
                 </div>
+              </div>
             </div>
-            
-            <div class="basis-1/2">
-                <form id="message-form" action="" method="post" class="flex flex-col gap-6">
-                    <div class="">
-                        <label for="email" class="text-textBlack block pb-2 text-sm font-semibold">Your email</label>
-                        <input name="email" id="email" class="bg-slate-400 border-1 border-[#104547] placeholder-neutral-500 text-sm rounded-lg block w-full p-2.5" placeholder="definitelynotaspammer@gmail.com" type="email">
-                    </div>
-                    <div class="">
-                        <label for="subject" class="text-textBlack block pb-2 text-sm font-semibold">Subject</label>
-                        <input name="subject" id="subject" class="bg-slate-400 border-1 border-[#104547] placeholder-neutral-500 text-sm rounded-lg block w-full p-2.5" placeholder="Hey!" type="text">
-                    </div>
-                    <div class="">
-                        <label for="message" class="text-textBlack block pb-2 text-sm font-semibold">Message</label>
-                        <textarea name="message" id="message" class="bg-slate-400 border-1 border-[#104547] placeholder-neutral-500 text-sm rounded-lg block w-full p-2.5" placeholder="Lets talk about.." type="text"></textarea>
-                    </div>
-                    <button id="mail-btn" class="bg-[#104547] hover:bg-[hsl(182,53%,27%)] rounded-full text-[#e4e4e4] font-medium py-2.5 px-5 w-full">Send Message!</button>
-                </form>
+
+            <div
+              class="text-center text-textWhite font-medium p-4 rounded-b-xl bg-green"
+            >
+              TailwindCSS Portfolio
             </div>
-        </section>
+          </div>
+
+          <!-- Bot -->
+          <div id="pBot" class="filtered Bots" style="transition: 100ms">
+            <div class="relative h-64 w-full overflow-hidden rounded-t-xl">
+              <img
+                alt="telegram bot example"
+                src="./assets/images/bot_teltotrel.webp"
+                loading="lazy"
+                decoding="async"
+                data-nimg="1"
+                class="object-cover object-center w-full h-full"
+              />
+
+              <div
+                class="absolute inset-0 opacity-100 sm:opacity-0 hover:opacity-100 bg-black bg-opacity-50 sm:bg-opacity-0 hover:bg-opacity-70 flex flex-row gap-4 p-4 justify-evenly items-center"
+                style="transition: 100ms"
+              >
+                <ul class="text-textWhite list-disc">
+                  <li>.NET</li>
+                  <li>EF Core</li>
+                  <li>PostgreSQL</li>
+                  <li>Trello Api</li>
+                </ul>
+
+                <div class="flex flex-col gap-2 h-full justify-center">
+                  <a
+                    href="https://github.com/ohshie/telegramToTrello"
+                    target="_blank"
+                  >
+                    <img
+                      src="assets/images/GitHubW.png"
+                      loading="lazy"
+                      decoding="async"
+                      class="hover:scale-105 h-14 w-14"
+                      style="transition: 100ms"
+                    />
+                  </a>
+
+                  <a href="https://t.me/teltotrelbot" target="_blank">
+                    <img
+                      src="assets/images/Globe.png"
+                      loading="lazy"
+                      decoding="async"
+                      class="hover:scale-105 h-14 w-14"
+                      style="transition: 100ms"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="text-center text-textWhite font-medium p-4 rounded-b-xl bg-green"
+            >
+              Telegram bot for Trello
+            </div>
+          </div>
+
+          <!-- Calc -->
+          <div id="pCalc" class="filtered Native" style="transition: 100ms">
+            <div class="relative h-64 w-full overflow-hidden rounded-t-xl">
+              <img
+                alt="AvaloniaUI calc example"
+                src="./assets/images/calc.webp"
+                loading="lazy"
+                decoding="async"
+                data-nimg="1"
+                class="object-cover object-center w-full h-full"
+              />
+
+              <div
+                class="absolute inset-0 opacity-100 sm:opacity-0 hover:opacity-100 bg-black bg-opacity-50 sm:bg-opacity-0 hover:bg-opacity-70 flex flex-row gap-4 p-4 justify-evenly items-center"
+                style="transition: 100ms"
+              >
+                <ul class="text-textWhite list-disc">
+                  <li>.NET</li>
+                  <li>AvaloniaUI Xaml</li>
+                </ul>
+
+                <div class="flex flex-col gap-2 h-full justify-center">
+                  <a
+                    href="https://github.com/ohshie/SimpleCalculator"
+                    target="_blank"
+                  >
+                    <img
+                      src="assets/images/GitHubW.png"
+                      loading="lazy"
+                      decoding="async"
+                      class="hover:scale-105 h-14 w-14"
+                      style="transition: 100ms"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="text-center text-textWhite font-medium p-4 rounded-b-xl bg-green"
+            >
+              Native calculator with AvaloniaUi
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section
+        id="contact"
+        class="flex flex-col sm:flex-row justify-between py-12"
+      >
+        <div class="basis-1/2 pr-8 flex-col justify-start">
+          <h2 class="text-xl font-bold text-textBlack my-2">Let's connect!</h2>
+          <p class="text-[#090909]">
+            Currently on the lookout for new opportunities, I'm always open to
+            chat. If you have questions, a potential project, or just want to
+            say hello, please drop me a line. I'll do my best to get back to you
+            quickly.
+          </p>
+          <div class="socials flex flex-row gap-2 py-4">
+            <a href="https://github.com/ohshie" target="_blank">
+              <img
+                class="hover:scale-105"
+                alt="Github icon and link"
+                loading="lazy"
+                width="48"
+                height="48"
+                decoding="async"
+                data-nimg="1"
+                style="color: transparent; transition: 100ms"
+                src="/assets/images/GitHubB.png"
+              />
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/stanislav-evdokimov-b36aaa19a/"
+              target="_blank"
+            >
+              <img
+                class="hover:scale-105"
+                alt="LinkedIn icon and link"
+                loading="lazy"
+                width="48"
+                height="48"
+                decoding="async"
+                data-nimg="1"
+                style="color: transparent; transition: 100ms"
+                src="/assets/images/LIb.png"
+              />
+            </a>
+          </div>
+        </div>
+
+        <div class="basis-1/2">
+          <form
+            id="message-form"
+            action=""
+            method="post"
+            class="flex flex-col gap-6"
+          >
+            <div class="">
+              <label
+                for="email"
+                class="text-textBlack block pb-2 text-sm font-semibold"
+                >Your email</label
+              >
+              <input
+                name="email"
+                id="email"
+                class="bg-slate-400 border-1 border-[#104547] placeholder-neutral-500 text-sm rounded-lg block w-full p-2.5"
+                placeholder="definitelynotaspammer@gmail.com"
+                type="email"
+              />
+            </div>
+            <div class="">
+              <label
+                for="subject"
+                class="text-textBlack block pb-2 text-sm font-semibold"
+                >Subject</label
+              >
+              <input
+                name="subject"
+                id="subject"
+                class="bg-slate-400 border-1 border-[#104547] placeholder-neutral-500 text-sm rounded-lg block w-full p-2.5"
+                placeholder="Hey!"
+                type="text"
+              />
+            </div>
+            <div class="">
+              <label
+                for="message"
+                class="text-textBlack block pb-2 text-sm font-semibold"
+                >Message</label
+              >
+              <textarea
+                name="message"
+                id="message"
+                class="bg-slate-400 border-1 border-[#104547] placeholder-neutral-500 text-sm rounded-lg block w-full p-2.5"
+                placeholder="Lets talk about.."
+                type="text"
+              ></textarea>
+            </div>
+            <button
+              id="form-btn"
+              class="bg-[#104547] hover:bg-[hsl(182,53%,27%)] rounded-full text-[#e4e4e4] font-medium py-2.5 px-5 w-full"
+            >
+              Send Message!
+            </button>
+          </form>
+        </div>
+      </section>
     </div>
     <!-- Footer -->
-    <footer class="border border-t-[#33353f] border-b-transparent border-x-transparent text-[#00100b]">
-        <div class="container flex flex-wrap items-center justify-between py-2 md:py-4 mx-auto px-6 md:px-12 lg:px-36 xl:px-48" style="transition: 100ms;">
-            <img src="assets/images/logoOhshie.png" 
-            class="self-center h-4 sm:h-8"
-            loading="lazy" 
-            decoding="async" 
-            data-nimg="1">
-            <a href="#top" class="text-textBlack hover:text-lightGreen">Go back to the top</a>
-        </div>
+    <footer
+      class="border border-t-[#33353f] border-b-transparent border-x-transparent text-[#00100b]"
+    >
+      <div
+        class="container flex flex-wrap items-center justify-between py-2 md:py-4 mx-auto px-6 md:px-12 lg:px-36 xl:px-48"
+        style="transition: 100ms"
+      >
+        <img
+          src="assets/images/logoOhshie.png"
+          class="self-center h-4 sm:h-8"
+          loading="lazy"
+          decoding="async"
+          data-nimg="1"
+        />
+        <a href="#top" class="text-textBlack hover:text-lightGreen"
+          >Go back to the top</a
+        >
+      </div>
     </footer>
-</main>
+  </main>
 
-<script type="module" src="index.js"></script>
-<script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="module" src="index.js"></script>
 </html>
