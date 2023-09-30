@@ -167,3 +167,9 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.\*
+.idea/.gitignore
+.idea/modules.xml
+.idea/Portfolio.iml
+.idea/vcs.xml
+assets/.DS_Store
+.DS_Store

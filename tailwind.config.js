@@ -14,9 +14,6 @@ module.exports = {
       sans: ['lato', 'open-sans', 'sans-serif']
     },
     extend: {
-      backgroundImage: {
-        'hero-pattern': "url('/assets/images/bg.png')"
-      },
       colors:{
         "lilac": "#a29fe3",
         "green": "#104547",

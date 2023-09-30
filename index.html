@@ -8,11 +8,10 @@
 </head>
 
 <main class="flex min-h-screen flex-col bg-gradient-to-br from-[#F2F2F2] to-lilac">
-    
     <!-- navbar -->
     <div id="navbar" class="sticky top-0 py-4 content-center w-full bg-opacity-75 backdrop-filter backdrop-blur-sm  bg-lilac z-10" style="transition: 100ms;">
         <div class="flex flex-row justify-evenly">
-            <img src="assets/images/logo.png" 
+            <img alt="logo" src="assets/images/logo.png"
             class="self-center h-4 sm:h-8"
             loading="lazy" 
             decoding="async" 
@@ -73,7 +72,7 @@
 
                 <!-- Image -->
                 <div class="hidden md:flex basis-1/2" style="transition: 100ms;">
-                    <img class="origin-left object-left object-cover" loading="lazy" decoding="async" data-nimg="1" style="color: transparent; transition: 100ms;" src="./assets/images/room.webp">
+                    <img class="origin-left object-left object-cover" loading="lazy" decoding="async" data-nimg="1" style="color: transparent; transition: 100ms;" src="./assets/images/room.webp" alt="picture of a room">
                 </div>
 
                 <!-- Text -->
@@ -82,16 +81,16 @@
                     <p class="text-base lg:text-lg text-textBlack" style="transition: 100ms;">I'm a junior developer with a background in C# and the .NET framework, including ASP.NET Core. I've hands-on experience with SQL and am familiar with EF Core ORM. As a self-taught professional, I'm committed to delivering innovative and top-quality solutions.</p>
                     <div class="flex flex-row gap-3 justify-start">
                         <button id="skillsButton">
-                            <p class="font-bold pb-1 hover:text-[#499167] text-green">Skills</p>  
-                            <div id="skillsButtonBar" class="h-1 bg-[#A29FE3]" style="width: calc(100%-0.75rem); opacity: 100; transition: 200ms;"></div>
+                            <p class="font-bold pb-1 hover:text-[#499167] text-green">Skills</p>
+                            <div id="skillsButtonBar" class="h-1 bg-[#A29FE3]" style="width: calc(100% - 0.75rem); opacity: 100; transition: 200ms;"></div>
                         </button>
                         <button id="eduButton">
                             <p class="font-bold pb-1 hover:text-[#499167] text-green">Education</p>  
-                            <div id="eduButtonBar" class="h-1 bg-[#A29FE3]" style="width: calc(100%-0.75rem); opacity: 0; transition: 200ms;"></div>
+                            <div id="eduButtonBar" class="h-1 bg-[#A29FE3]" style="width: calc(100% - 0.75rem); opacity: 0; transition: 200ms;"></div>
                         </button>
                         <button id="certButton">
                             <p class="font-bold pb-1 hover:text-[#499167] text-green">Certifications</p>  
-                            <div id="certButtonBar" class="h-1 bg-[#A29FE3]" style="width: calc(100%-0.75rem); opacity: 0; transition: 200ms;"></div>
+                            <div id="certButtonBar" class="h-1 bg-[#A29FE3]" style="width: calc(100% - 0.75rem); opacity: 0; transition: 200ms;"></div>
                         </button>
                     </div>
                     <div>
@@ -273,20 +272,20 @@
             </div>
             
             <div class="basis-1/2">
-                <form class="flex flex-col gap-6">
+                <form id="message-form" action="" method="post" class="flex flex-col gap-6">
                     <div class="">
                         <label for="email" class="text-textBlack block pb-2 text-sm font-semibold">Your email</label>
-                        <input id="email" class="bg-slate-400 border-1 border-[#104547] placeholder-neutral-500 text-sm rounded-lg block w-full p-2.5" placeholder="definitelynotaspammer@gmail.com" type="email">
+                        <input name="email" id="email" class="bg-slate-400 border-1 border-[#104547] placeholder-neutral-500 text-sm rounded-lg block w-full p-2.5" placeholder="definitelynotaspammer@gmail.com" type="email">
                     </div>
                     <div class="">
                         <label for="subject" class="text-textBlack block pb-2 text-sm font-semibold">Subject</label>
-                        <input id="subject" class="bg-slate-400 border-1 border-[#104547] placeholder-neutral-500 text-sm rounded-lg block w-full p-2.5" placeholder="Hey!" type="text">
+                        <input name="subject" id="subject" class="bg-slate-400 border-1 border-[#104547] placeholder-neutral-500 text-sm rounded-lg block w-full p-2.5" placeholder="Hey!" type="text">
                     </div>
                     <div class="">
                         <label for="message" class="text-textBlack block pb-2 text-sm font-semibold">Message</label>
-                        <textarea id="message" class="bg-slate-400 border-1 border-[#104547] placeholder-neutral-500 text-sm rounded-lg block w-full p-2.5" placeholder="Lets talk about.." type="text"></textarea>
+                        <textarea name="message" id="message" class="bg-slate-400 border-1 border-[#104547] placeholder-neutral-500 text-sm rounded-lg block w-full p-2.5" placeholder="Lets talk about.." type="text"></textarea>
                     </div>
-                    <button class="bg-[#104547] hover:bg-[hsl(182,53%,27%)] rounded-full text-[#e4e4e4] font-medium py-2.5 px-5 w-full">Send Message!</button>
+                    <button id="mail-btn" class="bg-[#104547] hover:bg-[hsl(182,53%,27%)] rounded-full text-[#e4e4e4] font-medium py-2.5 px-5 w-full">Send Message!</button>
                 </form>
             </div>
         </section>
@@ -304,5 +303,7 @@
     </footer>
 </main>
 
-<script src="index.js"></script>
+<script type="module" src="index.js"></script>
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </html>
