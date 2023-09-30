@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
 messageForm.addEventListener("submit", function submit(e) {
   e.preventDefault();
   sendMail();
-  //messageForm.reset();
+  messageForm.reset();
 });
 
 function serializeForm(form) {
