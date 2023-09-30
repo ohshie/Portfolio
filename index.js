@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
 messageForm.addEventListener("submit", function submit(e) {
   e.preventDefault();
   sendMail();
-  messageForm.reset();
+  //messageForm.reset();
 });
 
 function serializeForm(form) {
@@ -66,7 +66,7 @@ function serializeForm(form) {
 }
 
 function sendMail() {
-  fetch("https://emailjsworker.stas-evdokimov.workers.dev/", {
+  fetch("https://ohshieemailer.azurewebsites.net/api/emailer", {
     method: "POST",
     mode: "cors",
     headers: {
